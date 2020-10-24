@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>word-frequency-app</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='styles/reset.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='styles/word_frequency.css') }}">
+</head>
+<body>
+	<header class="wrapper">
+		<h1>Word Frequency</h1>
+	</header>
+	<section class="wrapper">
+		<form>
+			<p>Insert Text</p>
+			<textarea></textarea>
+			<button type="button">Check Frequency</button>
+		</form>
+	</section>
+	<section id="frequency_table" class="wrapper"></section>
+	<script src="{{ url_for('static', filename='javascript/word_frequency.js') }}"></script>
+</body>
+</html>
